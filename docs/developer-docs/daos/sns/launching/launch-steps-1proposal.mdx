@@ -96,6 +96,19 @@ of an adopted proposal in Stage 4.
 Nothing technical for dapp developers to do. This is triggered automatically as a result
 of an adopted proposal in Stage 4.
 
+:::warning
+At this point, the SNS is in a restricted mode and some SNS proposal types cannot be submitted:
+
+1. Manage Nervous System Parameters
+2. Transfer Sns Treasury Funds
+3. Mint Sns Tokens
+4. Upgrade Sns Controlled Canister
+5. Register Dapp Canisters
+6. Deregister Dapp Canisters
+
+This means that it is not easy to upgrade an SNS-controlled dapp canister during the swap. However, since the SNS-controlled dapp canisters are co-owned by NNS root during a swap, it is still possible via an NNS proposal. This is intended to be used on an emergency basis and should be avoided if possible.
+:::
+
 ### 7. (Automated) SNS-W initializes SNS canisters according to settings from Step 1.
 
 Nothing technical for dapp developers to do. This is triggered automatically as a result
@@ -116,4 +129,4 @@ of an adopted proposal in Stage 4.
 ### 10. (Automated) SNS swap finalizes.
 
 Nothing technical for dapp developers to do. This is triggered automatically as a result
-of an adopted proposal in Stage 4. At this point, the SNS is fully launched and the dapp canisters are fully decentralized. The SNS root canister is also given full control of the dapp canisters.
+of an adopted proposal in Stage 4. At this point, the SNS is fully launched and the dapp canisters are fully decentralized. The SNS root canister is also given full control of the dapp canisters. The SNS is no longer restricted and any proposal type can be submitted and executed.
